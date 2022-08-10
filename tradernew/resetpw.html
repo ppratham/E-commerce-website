@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resetpw.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/project/tradernew/account.html">Account</a>
+        <a href="/project/tradernew/addproduct.html">Add Products</a>
+        <a href="/project/tradernew/viewproduct.html">View Products</a>
+        <a href="/project/tradernew/manageproduct.html">Manage Products</a>
+        <a href="/project/tradernew/addshop.html">Add Shop</a>
+        <a href="/project/tradernew/manageshop.html">Manage Shop</a>
+        <a href="/project/tradernew/resetpw.html"class="active">Reset Password</a>
+      </div>
+      
+      <div id="main">
+      <header class="jumbotron jumbotron-fluid">
+              <div class="container-fluid text-center">
+              </div>
+          
+        <button class="openbtn" onclick="openNav()">☰ KartStreak</button>  
+        </div>
+       <div class="user-wrapper" style="margin-top: -13rem;
+       margin-left: 125rem;">
+          <img src="men.png" width="40px" height="40px" alt="">
+          <div>
+              <h4> aman singh </h4>
+              <small> super trader</small>
+          </div>
+          <div class="logout">
+           <!-- <a href="" class="btn btn-info btn-lg"> -->
+                Log out
+             </a>
+           </div>
+       </div>
+
+       <div class="form-gap"></div>
+       <div class="container">
+           <div class="row">
+               <div class="col-md-4 col-md-offset-4">
+                   <div class="panel panel-default">
+                       <div class="panel-body">
+                           <div class="text-center">
+                               <h3><i class="fa fa-lock fa-4x"></i></h3>
+                               <h2 class="text-center">Reset Password?</h2>
+                               <p>You can reset your password here.</p>
+                               <div class="panel-body">
+   
+                                   <form id="register-form" role="form" autocomplete="off" class="form" method="post">
+   
+                                       <div class="form-group">
+                                           <div class="input-group">
+                                               <span class="input-group-addon">
+                                                   <i class="fa fa-lock" aria-hidden="true"></i></span>
+                                               <input id="currentpw" name="currentpw" placeholder="Current Password" class="form-control" type="password">
+                                           </div>
+   
+                                           <div class="input-group">
+                                               <span class="input-group-addon">
+                                                   <i class="fa fa-lock" aria-hidden="true"></i></span>
+                                               <input id="newpw" name="newpw" placeholder="New Password" class="form-control" type="password">
+                                           </div>
+   
+                                           <div class="input-group">
+                                               <span class="input-group-addon">
+                                                   <i class="fa fa-lock" aria-hidden="true"></i></span>
+                                               <input id="confirmpw" name="confirmpw" placeholder="Confirm Yuour Password" class="form-control" type="password">
+                                               </div>
+   
+                                       </div>
+                                       <div class="form-group">
+                                           <input name="recover-submit" class="btn btn-lg btn-primary btn-block"  value="Reset Password" type="submit" style="background-color: rgb(244, 103, 30);"> 
+                                       </div>
+   
+                                       <input type="hidden" class="hide" name="token" id="token" value="">
+                                   </form>
+   
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
+<!-- javascript part for uploading image -->
+
+
+<script>
+    var btnUpload = $("#upload_file"),
+        btnOuter = $(".button_outer");
+    btnUpload.on("change", function (e) {
+        var ext = btnUpload.val().split('.').pop().toLowerCase();
+        if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
+            $(".error_msg").text("Not an Image...");
+        } else {
+            $(".error_msg").text("");
+            btnOuter.addClass("file_uploading");
+            setTimeout(function () {
+                btnOuter.addClass("file_uploaded");
+            }, 3000);
+            var uploadedFile = URL.createObjectURL(e.target.files[0]);
+            setTimeout(function () {
+                $(".profile").attr('src', uploadedFile)
+                // $("#uploaded_view").append('<img src="' + uploadedFile + '" />').addClass(
+                //     "show");
+            }, 3500);
+        }
+    });
+    $(".file_remove").on("click", function (e) {
+        $("#uploaded_view").removeClass("show");
+        $("#uploaded_view").find("img").remove();
+        btnOuter.removeClass("file_uploading");
+        btnOuter.removeClass("file_uploaded");
+    });
+</script>
+
+
+
+
+
+
+
+<!-- javascript part for ending image -->
+  </div>
+</body>
+</html>
+
+
+

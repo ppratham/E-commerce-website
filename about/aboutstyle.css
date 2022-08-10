@@ -1,0 +1,322 @@
+body {
+    margin: 2rem;
+}
+
+
+/* button part */
+.container .button{
+	margin-top: 30px;
+}
+.container .button  a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.contener .button a:hover{
+	background-color: #a52a2a;
+	color:rgb(48, 121, 150);
+}
+
+.container .social i{
+	color:#a52a2a;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.container .social i:hover{
+	color:#df7834;
+}
+
+.container .social {
+    margin: -100px -4px;
+}
+
+/* about header */
+.jumbotron {
+    background: url("/project/about/super.png") no-repeat center;
+}
+.btn-primary {
+    background-color: #c60063;
+    border-color: #c60063;
+}
+
+
+/* slider */
+.carousel {
+    position: relative;
+    padding: 5rem;
+    margin-bottom: 10rem;
+    background-color: rgb(246, 246, 246);
+    }
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+/* nav fotter css */
+
+*{
+  font-family: "Helvetica Neue",sans-serif;
+  margin: 0; padding:0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+
+} 
+/* 
+for footer */
+
+/* footer stars */
+
+.footer {
+  /* background: url(/project/contact/images/fo); */
+  /* background-repeat: no-repeat; */
+  background-size: 100% 100%;
+  /* padding-top: 115px; */
+  text-align: center;
+  background-color: rgb(218, 92, 50);;
+}
+
+.footer .titlepage {
+  text-align: left;
+  padding-bottom: 0px;
+}
+
+.footer .titlepage h2 {
+  color: #fff;
+  margin: inherit;
+  border-bottom: #fff solid 1px;
+}
+
+.logo1 {
+  float: left;
+  margin-top: -30px;
+  height: 175px;
+}
+
+ul.social_icon {
+  padding-top: 37px;
+  width: 100%;
+  float: left;
+  text-align: left;
+}
+
+ul.social_icon li {
+  display: inline-block;
+}
+
+ul.social_icon li a {
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 30px;
+  margin: 0 3px;
+}
+
+ul.social_icon li a:hover {
+  background-color: #48ca95;
+  color: #fff;
+}
+
+.footer h3 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: left;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+.about_us li {
+  color: #fff;
+  font-size: 17px;
+  text-align: left;
+}
+
+.conta li {
+  color: #fff;
+  font-size: 17px;
+  text-align: left;
+}
+
+.bottom_form h3 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: left;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+.bottom_form .enter {
+  border: inherit;
+  padding: 0px 19px;
+  width: 100%;
+  height: 45px;
+  background: #fffffff2;
+  color: #ccc8c8;
+  font-size: 17px;
+  font-weight: 600;
+  float: left;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.sub_btn {
+  font-size: 17px;
+  transition: ease-in all 0.5s;
+  background-color: #48ca95;
+  color: #fff;
+  padding: 10px 0px;
+  max-width: 147px;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.sub_btn:hover {
+  background-color: #000;
+  transition: ease-in all 0.5s;
+  color: #fff;
+}
+
+.copyright {
+  margin-top: 80px;
+  padding-bottom: 0px;
+}
+
+.copyright p {
+  color: #ddd;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  border-top: #ddd solid 1px;
+  padding-top: 25px;
+  font-weight: normal;
+}
+
+.copyright a {
+  color: #ddd;
+}
+/* footer ends here */
+
+/* nav  */
+ a{
+  color: black;
+  text-decoration: none;
+}
+
+
+/* header parts begains here */
+.micons{
+  color: black!important;
+  background-color: #eeeeee;
+  /* padding: 4px; */
+
+}
+.micons a {
+  color: black!important;
+   
+}
+.micons a:hover{
+background-color: rgb(245, 98, 13);
+padding: 14px;
+}
+/* modal */
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 0px!important;
+}
+.btn-group-lg>.btn, .btn-lg {
+  padding: 2px 3px! important;
+  font-size: 10px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  }
+
+.card1{
+    position: relative;
+}
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(180, 67, 23, 0.2);
+    transition: 0.3s;
+  }
+  
+  .card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(185, 69, 23, 0.2);
+  }
+
+
+
+
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }

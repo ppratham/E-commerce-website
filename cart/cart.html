@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="castyle.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- bootstrap -->
+    <title>cart</title>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="row" style="width: 65rem;">
+            <div class="col-md-8 cart" style="height: 49rem;">
+                <div class="title">
+                    <div class="row">
+                        <div class="col">
+                            <h2 style="margin-left:-1rem"><b> My Shopping Cart</b></h2>
+                        </div>
+
+                        <div class="col align-self-center text-right text-muted">3 items</div>
+                    </div>
+                </div>
+                <div class="all-list">
+                    <h1>Product</h1>
+                    <h1>Quantity</h1>
+                    <h1>Price</h1>
+                    <h1>Total</h1>
+                </div>
+
+                <div class="row border-top border-bottom">
+                    <div class="row main align-items-center">
+                        <div class="col-2"><img class="img-fluid" src="apple.png"></div>
+
+                        <div class="col">
+                            <div class="row text-muted">Apple</div>
+                            <div class="row">Fresh Apple</div>
+                        </div>
+
+                        
+                            <div class="col"> <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
+
+                            <!-- <button class="page-link" onclick="decreaseNumber()" style="margin-left: -12rem;">
+                            <i class="fas fa-minus"></i></button>
+
+                            <input type="text" class="page-link" value="0" id="textbox">
+
+                            <button class="page-link" onclick="increaseNumber()" style="margin-right: 12rem;">
+                            <i class="fas fa-plus"></i></button> -->
+
+                        <div class="col">&euro; 44.00</div>
+                        <div class="col">&euro; 44.00 </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="row main align-items-center">
+                        <div class="col-2"><img class="img-fluid" src="meat.png"></div>
+                        <div class="col">
+                            <div class="row text-muted">Chicken</div>
+                            <div class="row">Fresh Meat</div>
+                        </div>
+                        <div class="col"> <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
+                        <div class="col">&euro; 44.00 </div>
+                        <div class="col">&euro; 44.00 </div>
+                    </div>
+                </div>
+
+                <div class="row border-top border-bottom">
+                    <div class="row main align-items-center">
+                        <div class="col-2"><img class="img-fluid" src="grape.png"></div>
+                        <div class="col">
+                            <div class="row text-muted">Grape</div>
+                            <div class="row">Fresh Grape</div>
+                        </div>
+                        <div class="col"> <a href="#">-</a><a href="#" class="border">1</a><a href="#">+</a> </div>
+                        <div class="col">&euro; 44.00 </div>
+                        <div class="col">&euro; 44.00 </div>
+                    </div>
+                </div>
+                <div class="back-to-shop"><a href="#">&leftarrow;</a><span class="text-muted">Continue shopping</span>
+                </div>
+                <img src="shop.png">
+
+            </div>
+            <!-- <div class="col-md-4">
+                <a href="#" class="button">Link Button</a>
+<button class="button">Button</button>
+            </div> -->
+
+            <!-- <div class="col-md-4 summary">
+                <div>
+                    <h5><b>Order Summary</b></h5>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col" style="padding-left:1;">ITEMS 3</div>
+                    <div class="col text-right">&euro; 132.00</div>
+                </div>
+                <form>
+                     <p>SHIPPING</p> <select>
+                        <option class="text-muted">Standard-Delivery- &euro;5.00</option>
+                    </select> -->
+                    <!-- <p>Slot</p> <input id="code" placeholder="Enter your code">
+                    <p style="margin-top:1rem;">Discount</p> <input id="code" placeholder="Enter your Discount coupon">
+                </form>
+                <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+
+                    <button class="btn1">Apply</button>
+
+                </div>
+                <hr size="9" width="90%" color="white">
+                <button class="btn2">CHECKOUT</button>
+                <i class="fa-brands fa-cc-paypal"></i>
+
+                <div class="ro" style=" margin-top: -20rem;">
+                    <div class="col">Total Cost</div>
+                    <div class="col text-right" style="margin-top: -1.4rem;">&euro; 137.00</div>
+
+                </div> -->
+
+            <!-- </div>  -->
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+const decreaseNumber = () => {
+    var itemval = document.getElementById('textbox');
+    console.log(itemval.value);
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

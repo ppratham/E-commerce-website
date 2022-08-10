@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accountstyle.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/project/tradernew/account.html"class="active">Account</a>
+        <a href="/project/tradernew/addproduct.html">Add Products</a>
+        <a href="/project/tradernew/viewproduct.html">View Products</a>
+        <a href="/project/tradernew/manageproduct.html">Manage Products</a>
+        <a href="/project/tradernew/addshop.html">Add Shop</a>
+        <a href="/project/tradernew/manageshop.html">Manage Shop</a>
+        <a href="/project/tradernew/resetpw.html">Reset Password</a>
+      </div>
+      
+      <div id="main">
+      <header class="jumbotron jumbotron-fluid">
+              <div class="container-fluid text-center">
+              </div>
+          
+        <button class="openbtn" onclick="openNav()">☰ KartStreak</button>  
+        </div>
+       <div class="user-wrapper" style="margin-top: -5rem;margin-left: 80rem;">
+          <img src="men.png" width="40px" height="40px" alt="">
+          <div>
+              <h4> aman singh </h4>
+              <small> super trader</small>
+          </div>
+          <div class="logout">
+           <!-- <a href="" class="btn btn-info btn-lg"> -->
+                Log out
+             </a>
+           </div>
+       </div>
+
+<div class="container">
+    <div class="cover-photo">
+        <div class="cover-photo" style="margin-bottom: -10rem;">
+        <img src="contacts.gif" alt="Avatar" class="avatar1">
+    </div>
+      <img src="dd.png" class="profile">
+    </div>
+    
+    <div class="profile-name" style="margin-top:0rem">Aman Rai</div>
+
+<!-- button for upload image     -->
+
+<main class="main_full">
+    <div class="container2">
+        <div class="panel">
+            <div class="button_outer">
+                <div class="btn_upload">
+                    <!-- <input type="file" id="upload_file" name="">  -->
+                    <!-- <input type="file" id="upload_file" name="" value="rename and download"> -->
+                    <input type="file" id="upload_file" name="filename">
+                    Upload Image
+                </div>
+                <div class="processing_bar"></div>
+                <div class="success_box"></div>
+            </div>
+        </div>
+        <div class="error_msg"></div>
+        <div class="uploaded_file_view" id="uploaded_view">
+            <span class="file_remove">X</span>
+        </div>
+    </div>
+</main>
+
+
+<!-- end here image part -->
+
+
+    <div class=”label” style="margin-top:2.9rem">
+
+        <label>Email Address</label><br>
+        
+        <!-- <input type=”text” name=email placeholder="" style="height: 22px;width: 13rem;"><br><br> -->
+        <h5>hello@gmail.com</h5>
+        
+        <label>Phone Number</label><br>
+        <h5>9844422678</h5>
+        
+        <!-- <input type=”text” name=number placeholder="" style="height: 22px;width: 13rem;"><br><br> -->
+
+        <label>Birthday</label><br>
+        <h5>jan-27-1996</h5>
+        
+        <!-- <input type=”text” name=birthday placeholder="" style="height: 22px;width: 13rem;"><br><br> -->
+
+        
+        </div>
+        
+        
+    <form action="/About/trader-dashboard/account-detail.html">
+    <button class="msg-btn">
+        Update Profile
+    </button>
+    </form>
+   
+   
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
+<!-- javascript part for uploading image -->
+
+
+<script>
+    var btnUpload = $("#upload_file"),
+        btnOuter = $(".button_outer");
+    btnUpload.on("change", function (e) {
+        var ext = btnUpload.val().split('.').pop().toLowerCase();
+        if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
+            $(".error_msg").text("Not an Image...");
+        } else {
+            $(".error_msg").text("");
+            btnOuter.addClass("file_uploading");
+            setTimeout(function () {
+                btnOuter.addClass("file_uploaded");
+            }, 3000);
+            var uploadedFile = URL.createObjectURL(e.target.files[0]);
+            setTimeout(function () {
+                $(".profile").attr('src', uploadedFile)
+                // $("#uploaded_view").append('<img src="' + uploadedFile + '" />').addClass(
+                //     "show");
+            }, 3500);
+        }
+    });
+    $(".file_remove").on("click", function (e) {
+        $("#uploaded_view").removeClass("show");
+        $("#uploaded_view").find("img").remove();
+        btnOuter.removeClass("file_uploading");
+        btnOuter.removeClass("file_uploaded");
+    });
+</script>
+
+
+
+
+
+
+
+<!-- javascript part for ending image -->
+  </div>
+</body>
+</html>
+
+
+

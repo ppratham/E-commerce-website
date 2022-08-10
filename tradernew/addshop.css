@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+  
+  }
+  body{
+      font-family: Montserrat, sans-serif;
+      background: #e0e0e0;
+     
+      
+    }
+    .container{
+      user-select: none;
+      margin: 28px auto;
+      background: #f8f8f8;
+      background-color: #ec7310;
+      border-radius: 5px;
+      width: 550px;
+      text-align: center;
+      box-shadow: 0 10px 20px -10px rgba(0,0,0,.75);
+    }
+    .cover-photo{
+      background: url(gg.jpg);
+      height: 150px;
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+    }
+  
+    .profile{
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      margin: 93px 0 0 -175px;
+      border: 0px solid #1f1a32;
+      padding: 7px;
+      background: #f3f3f5;
+    }
+    .profile-name{
+      font-size: 25px;
+      font-weight: bold;
+      margin: 27px 0 0 47px;
+    }
+    .about{
+      margin-top: 35px;
+      line-height: 21px;
+    }
+    button{
+      margin: 10px 0 40px 0;
+    }
+    .msg-btn, .follow-btn{
+      background: #f9fcfc;
+      border: 1px solid #03bfbc;
+      padding: 10px 25px;
+      color: #231e39;
+      border-radius: 3px;
+      font-family: Montserrat, sans-serif;
+      cursor: pointer;
+      margin-top: 3rem;
+    }
+    .follow-btn{
+      margin-left: 10px;
+      background: transparent;
+      color: #02899c;
+    }
+    .follow-btn:hover{
+      color: #231e39;
+      background: #03bfbc;
+      transition: .5s;
+    }
+    /* label{
+  
+      font-size: 14px;
+      
+      font-family:Verdana;
+      
+      margin-left: -8rem;
+      
+      margin-top: 21px;    
+      
+      } */
+      /* .label input{
+  
+          width:280px;
+          
+          height:40px;
+          
+          margin-top:10px;
+          
+          margin-left:0px;
+          
+          box-sizing: border-box;
+          
+          border: none;
+          
+          border-bottom: 2px solid rgb(0, 146, 160);
+          
+          font-size: 20px;
+        
+          
+          } */
+      
+      
+    /* .container i{
+      padding-left: 20px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: .5s;
+      width: fit-content;
+    } */
+    /* .container i:hover{
+      color: #03bfbc;
+    }
+   */
+  /* for gif */
+  .gifcontainer {
+      margin-left: 6rem;
+      padding-left: 4rem;
+      margin-top: -14.8rem;
+  }
+  
+  img.avatar1 {
+      width: 33%;
+      border-radius: 3%;
+      margin-bottom: -8.5rem;
+      margin-right: -5rem;
+      margin-top: -2rem;
+      margin-left: -3rem;
+  
+  }
+  
+  /* for gif */
+  h5{
+   margin-top: -1.1rem; 
+   margin-left: 9rem;
+  }
+  
+  /* css for image upload part */
+  /* 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  
+  
+  
+  
+  /* css for image end part */
+  
+  /* header start here */
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(235, 102, 26)!important;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fdfbfb;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #080808;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidebar a.active {
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--main-color);
+    border-radius: 30px 0px 0px 30px;
+  
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  /*   
+  for image */
+  
+  .user-wrapper {
+    /* margin-left: 91rem; */
+    display: flex;
+    align-items: center;
+    
+  } 
+  
+  
+  .logout{
+    margin-left: -30rem;
+    background-color: #ee7a2c;
+    padding: 15px 32px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+  
+  }
+  
+  
+  .jumbotron {
+  background-color: #f1f1f1;
+  }
+  .button {
+    background-color: #e67124;
+    border: none;
+    color: white;
+    padding: 7px 19px;
+    /* text-align: center; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  /* next */
+
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #111111;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #171817;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #fc8638;
+    padding: 20px;
+    margin-left: 25rem;
+    margin-right: 22rem;
+}
+
+.btn {
+    height: 2.5rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    background-color: rgb(19, 18, 18);
+    color: white;
+    width: 5rem;
+}
+
+.imgcontainer {
+    text-align: left;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 34%;
+    border-radius: 16%;
+    margin-bottom: -0.5rem;
+    margin-right: 0rem;
+    margin-top: -3rem;
+
+
+}
+h3{
+    color: rgb(245, 244, 244);
+}
+  
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  
+  

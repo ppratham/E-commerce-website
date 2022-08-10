@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="manageshop.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/project/tradernew/account.html">Account</a>
+        <a href="/project/tradernew/addproduct.html">Add Products</a>
+        <a href="/project/tradernew/viewproduct.html">View Products</a>
+        <a href="/project/tradernew/manageproduct.html">Manage Products</a>
+        <a href="/project/tradernew/addshop.html">Add Shop</a>
+        <a href="/project/tradernew/manageshop.html"class="active">Manage Shop</a>
+        <a href="/project/tradernew/resetpw.html">Reset Password</a>
+      </div>
+      
+      <div id="main">
+      <header class="jumbotron jumbotron-fluid">
+              <div class="container-fluid text-center">
+              </div>
+          
+        <button class="openbtn" onclick="openNav()">☰ KartStreak</button>  
+        </div>
+       <div class="user-wrapper" style="margin-top: -5rem;margin-left: 80rem;">
+          <img src="men.png" width="40px" height="40px" alt="">
+          <div>
+              <h4 style="font-size: 17px;
+              margin-top: 1rem;"> aman singh </h4>
+              <small> super trader</small>
+          </div>
+          <div class="logout">
+           <!-- <a href="" class="btn btn-info btn-lg"> -->
+                Log out
+             </a>
+           </div>
+       </div>
+
+       <h2 style="text-align: center;">Manage Shop</h2>
+        <table id="myTable" class = "table table-hover table-dark"  style = "color:#eb7323; width: 50%;margin-left: 27rem;">
+            <tr>
+                <th>#</th>
+                <th>Shop Name</th>
+                <th>Shop Register Number</th>
+                <th>Shop Location</th>
+                <th>Shop Image</th>
+                <th>Action</th>
+               
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Fetch Data ! </td>
+                <td>Fetch Data ! </td>
+                <td>Fetch Data ! </td>
+                <td>Fetch Data ! </td>
+                <td>Fetch Data ! </td>
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Fetch Data ! </td>
+                <td>Fetch Data ! </td>
+                <td>Fetch Data ! </td>
+                <td>Fetch Data ! </td>
+                <td>Fetch Data ! </td>
+            </tr>
+            
+        </table>
+    
+   
+   
+   
+   
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
+<!-- javascript part for uploading image -->
+
+
+<script>
+    var btnUpload = $("#upload_file"),
+        btnOuter = $(".button_outer");
+    btnUpload.on("change", function (e) {
+        var ext = btnUpload.val().split('.').pop().toLowerCase();
+        if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
+            $(".error_msg").text("Not an Image...");
+        } else {
+            $(".error_msg").text("");
+            btnOuter.addClass("file_uploading");
+            setTimeout(function () {
+                btnOuter.addClass("file_uploaded");
+            }, 3000);
+            var uploadedFile = URL.createObjectURL(e.target.files[0]);
+            setTimeout(function () {
+                $(".profile").attr('src', uploadedFile)
+                // $("#uploaded_view").append('<img src="' + uploadedFile + '" />').addClass(
+                //     "show");
+            }, 3500);
+        }
+    });
+    $(".file_remove").on("click", function (e) {
+        $("#uploaded_view").removeClass("show");
+        $("#uploaded_view").find("img").remove();
+        btnOuter.removeClass("file_uploading");
+        btnOuter.removeClass("file_uploaded");
+    });
+</script>
+
+
+
+
+
+
+
+<!-- javascript part for ending image -->
+  </div>
+</body>
+</html>
+
+
+

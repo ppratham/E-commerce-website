@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="editproduct.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/project/tradernew/account.html">Account</a>
+        <a href="/project/tradernew/addproduct.html">Add Products</a>
+        <a href="/project/tradernew/viewproduct.html">View Products</a>
+        <a href="/project/tradernew/manageproduct.html"class="active">Manage Products</a>
+        <a href="/project/tradernew/addshop.html">Add Shop</a>
+        <a href="/project/tradernew/manageshop.html">Manage Shop</a>
+        <a href="/project/tradernew/resetpw.html">Reset Password</a>
+      </div>
+      
+      <div id="main">
+      <header class="jumbotron jumbotron-fluid">
+              <div class="container-fluid text-center">
+              </div>
+          
+        <button class="openbtn" onclick="openNav()">☰ KartStreak</button>  
+        </div>
+       <div class="user-wrapper" style="margin-top: -5rem;margin-left: 80rem;">
+          <img src="men.png" width="40px" height="40px" alt="">
+          <div>
+              <h4> aman singh </h4>
+              <small> super trader</small>
+          </div>
+          <div class="logout">
+           <!-- <a href="" class="btn btn-info btn-lg"> -->
+                Log out
+             </a>
+           </div>
+       </div>
+
+       <div class="container">
+        <div class="title" style="color: rgb(238, 121, 43);">Manage Products</div>
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Product Name</span>
+                <input type="text" placeholder="Product Name" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Product Quantity</span>
+                <input type="text" placeholder="Product Quantity" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Product Price</span>
+                <input type="text" placeholder="Product Price" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Product Allergy Information</span>
+                <input type="text" placeholder="Product Allergy Information" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Product Description</span>
+                    <textarea>      </textarea>
+              </div>
+              <div class="input-box">
+                <span class="details">Product Minimum Quantity</span>
+                <input type="text" placeholder="Product Minimum Quantity" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Product Maximum Quantity</span>
+                <input type="text" placeholder="Product Maximum Quantity" required>
+              </div>
+              <div class="gifcontainer">
+                <img src="ggi.gif" alt="Avatar" class="avatar1">
+            </div>
+            </div>
+            <div class="product-details" style="margin-top: 0rem;
+            margin-left: -27rem;">
+                <span class="details" style="color:rgb(236, 128, 39)">Product Category</span><br>
+                <select name="product_name" id="product_name" style="width: 13rem; height: 2rem;">
+                    <option value="">Select a Category</option>
+                    <option value="meat">meat</option>
+                    <option value="fish">fish</option>
+                        <option value="meat">meat</option>
+                    <option value="fish">fish</option>
+                </select>
+            </div>
+           
+    
+            <div class="button">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </div>
+   
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
+<!-- javascript part for uploading image -->
+
+
+<script>
+    var btnUpload = $("#upload_file"),
+        btnOuter = $(".button_outer");
+    btnUpload.on("change", function (e) {
+        var ext = btnUpload.val().split('.').pop().toLowerCase();
+        if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
+            $(".error_msg").text("Not an Image...");
+        } else {
+            $(".error_msg").text("");
+            btnOuter.addClass("file_uploading");
+            setTimeout(function () {
+                btnOuter.addClass("file_uploaded");
+            }, 3000);
+            var uploadedFile = URL.createObjectURL(e.target.files[0]);
+            setTimeout(function () {
+                $(".profile").attr('src', uploadedFile)
+                // $("#uploaded_view").append('<img src="' + uploadedFile + '" />').addClass(
+                //     "show");
+            }, 3500);
+        }
+    });
+    $(".file_remove").on("click", function (e) {
+        $("#uploaded_view").removeClass("show");
+        $("#uploaded_view").find("img").remove();
+        btnOuter.removeClass("file_uploading");
+        btnOuter.removeClass("file_uploaded");
+    });
+</script>
+
+
+
+
+
+
+
+<!-- javascript part for ending image -->
+  </div>
+</body>
+</html>
+
+
+

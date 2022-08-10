@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="traderstyle.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Account</a>
+  <a href="#">Add Products</a>
+  <a href="#">View Products</a>
+  <a href="#">Manage Products</a>
+  <a href="#">Add Shop</a>
+  <a href="#">Manage Shop</a>
+  <a href="#">Account Settings</a>
+  <a href="#">Reset Password</a>
+</div>
+
+<div id="main">
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container-fluid text-center">
+        </div>
+    
+  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+  </div>
+<div class="user-wrapper" style="margin-top: -15rem;margin-left: 120rem;">
+    <img src="men.png" width="40px" height="40px" alt="">
+    <div>
+        <h4> aman singh </h4>
+        <small> super trader</small>
+    </div>
+    <div class="logout">
+     <a href="#" class="btn btn-info btn-lg">
+         <span class="glyphicon glyphicon-log-out"></span> Log out
+       </a>
+     </div>
+ </div>
+</header>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
+

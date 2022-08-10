@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkstyle.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="container1">
+            <div class="order">
+                <h2>Your order summary</h2>
+                <div class="item">
+                    <img src='apple.png' alt='' style="width: 126px; height: 126px;">
+                    <div class="infos">
+                        <p class="price1">10%</p>
+                    </div>
+
+                    <div class="info">
+                        <h4> Mustang Apple</h4>
+                        <p class="quantity">Quantity: 1</p>
+                        <p class="price">1.99€</p>
+                      
+                    </div> 
+                    
+                </div> 
+
+                <div class="item">
+                    <img src='grape.png' alt='' style="width: 126px; height: 126px;">
+                    <div class="info">
+                        <h4>Mustang Grape</h4>
+                        <p class="quantity">Quantity: 3</p>
+                        <p class="price">26.97€</p>
+                    </div> 
+                </div> 
+
+                <div class="item">
+                    <img src='meat.png' alt='' style="width: 126px; height: 126px;">
+                    <div class="info">
+                        <h4>Mustang Chicken</h4>
+                        <p class="quantity">Quantity: 1</p>
+                        <p class="price">31.95€</p>
+                    </div> 
+                </div> 
+                
+                <h3 class="total">TOTAL: 60.91€</h3>
+            </div> 
+        </div>
+
+        <div class="container2">
+            <div class="checkout">
+                <div class="payment">
+                    <div class="content">
+                        <div class="infos">
+                            <div class="method">
+                                <h2>Choose a payment method</h2>
+                                <img src='paypal.jpg' alt='' class="paypal">
+                            </div> 
+                            <div class="cardNumber">
+                                <p class="title">Credit card number</p><br>
+                                <input type="text" class="number">
+                                <input type="text" class="number">
+                                <input type="text" class="number">
+                                <input type="text" class="number">
+                            </div> 
+                            <div class="cardHolderName">
+                                <p class="title">Card holder name</p>
+                                <input type="text">
+                            </div> 
+                            <div class="expiration">
+                                <p class="title">Expiration date</p>
+                                <select>
+                                    <option>Month</option>
+                                    <option>01</option>
+                                    <option>02</option>
+                                    <option>03</option>
+                                </select>
+
+                                <select>
+                                    <option>Year</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                </select>
+                            </div><br>
+                            <div class="slotn">
+                                <p class="title">Collection Slot</p>
+                                <input type="text">
+                            </div>
+                           
+                            <button>Checkout</button>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+        </div> 
+    </div> 
+</body>
+
+</html>

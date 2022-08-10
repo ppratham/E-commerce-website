@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+  
+  }
+  body{
+      font-family: Montserrat, sans-serif;
+      background: #e0e0e0;
+     
+      
+    }
+    
+  
+  /* for gif */
+  .gifcontainer {
+      margin-left: 6rem;
+      padding-left: 4rem;
+      margin-top: -14.8rem;
+  }
+  
+  img.avatar1 {
+      width: 33%;
+      border-radius: 3%;
+      margin-bottom: -8.5rem;
+      margin-right: -5rem;
+      margin-top: -2rem;
+      margin-left: -3rem;
+  
+  }
+  
+  /* for gif */
+  h5{
+   margin-top: -1.1rem; 
+   margin-left: 9rem;
+  }
+  
+  /* css for image upload part */
+  /* 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  
+  
+  
+  /* css for image end part */
+  
+  /* header start here */
+  body {
+    font-family: "Lato", sans-serif;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(235, 102, 26)!important;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fdfbfb;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #080808;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidebar a.active {
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--main-color);
+    border-radius: 30px 0px 0px 30px;
+  
+  }
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(247, 109, 45);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  /*   
+  for image */
+  
+  .user-wrapper {
+    /* margin-left: 91rem; */
+    display: flex;
+    align-items: center;
+    
+  } 
+  
+  
+  .logout{
+    margin-left: -30rem;
+    background-color: #ee7a2c;
+    padding: 8px 17px;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 1rem;
+  
+  }
+  
+  
+  .jumbotron {
+  background-color: #f1f1f1;
+  }
+  .button {
+    background-color: #e67124;
+    border: none;
+    color: white;
+    padding: 7px 19px;
+    /* text-align: center; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  /* next */
+  * {
+    box-sizing: border-box;
+  }
+  
+  #myInput {
+    /* background-image: ; */
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 14px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  .table #mytable {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid rgb(192, 191, 191);
+    font-size: 18px;
+  }
+  
+  .table th, .table td {
+    text-align: left;
+    padding: 12px;
+  }
+  
+  .table tr {
+    border-bottom: 1px solid rgb(218, 216, 216);
+  }
+  
+  .table tr.header, .table tr:hover {
+    background-color: #f5772ffd;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  
+  
